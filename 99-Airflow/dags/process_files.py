@@ -11,9 +11,9 @@ from datetime import datetime, timedelta
 import requests
 
 
-
 def download_file():
-    indata = requests.get('https://raw.githubusercontent.com/abhishek8585/EKG-Foundations/master/04A-postgress/create_world.sql')
+    indata = requests.get('https://raw.githubusercontent.com/abhishek8585/EKG-Foundations/master/04A-postgress/create_world.sql'
+    )
     with open('/opt/airflow/dags/files/create_world.sql', 'w') as outfile:
         outfile.write(indata.text)
 
