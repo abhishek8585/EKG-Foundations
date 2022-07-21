@@ -24,3 +24,4 @@ https://code.visualstudio.com/docs/remote/attach-container
 
 # Docker compose
 docker-compose --profile airflow up
+docker-compose --profile superset up
