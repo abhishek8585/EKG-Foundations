@@ -12,10 +12,10 @@ import requests
 
 
 def download_file():
-    indata = requests.get('https://raw.githubusercontent.com/abhishek8585/EKG-Foundations/master/04A-postgress/create_world.sql'
-    )
+    indata = requests.get('https://raw.githubusercontent.com/tadinve/EKG-Foundations/master/04A-postgress/create_world.sql')
     with open('/opt/airflow/dags/files/create_world.sql', 'w') as outfile:
         outfile.write(indata.text)
+        
 
 with DAG(   dag_id="process_files", 
             start_date= airflow.utils.dates.days_ago(1)

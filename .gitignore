@@ -1,7 +1,4 @@
 volume**
-99-Airflow/logs/**
-!99-Airflow/logs/.gitkeep
-
 __pycache__/
 log/
 
