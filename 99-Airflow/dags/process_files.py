@@ -17,8 +17,6 @@ def download_file():
     with open('/opt/airflow/dags/files/create_world.sql', 'w') as outfile:
         outfile.write(indata.text)
 
-
-
 with DAG(   dag_id="process_files", 
             start_date= airflow.utils.dates.days_ago(1)
         ) as dag:
